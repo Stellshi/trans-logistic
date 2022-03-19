@@ -15,6 +15,15 @@ body {
     box-sizing: border-box;
 }
 
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+ul, ol {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 /* Container */
 .container {
@@ -23,6 +32,10 @@ body {
     margin: 0 auto;
     padding: 0 15px;
 }
+
+
+
+
 
 
 /* Header */
@@ -46,6 +59,10 @@ body {
 }
 
 
+
+
+
+
 /* Nav */
 
 .nav {
@@ -67,6 +84,11 @@ body {
     background-color: #004AF2;
 }
 
+
+
+
+
+
 /* Intro */
 .intro {
 
@@ -83,6 +105,112 @@ body {
     justify-content: space-between;
 }
 
-.intro__text{
+.intro__text {
     text-align: right;
+    margin-bottom: 45px;
+}
+
+.intro__countries {
+    font-size: 15px;
+    color: #fff;
+}
+
+.intro__titile {
+    position: relative;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 110px;
+    line-height: 0.9;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+.intro__title-amp {
+
+    line-height: 1;
+    font-size: 170px;
+    font-weight: 900;
+    color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.request-form {
+    width: 100%;
+    max-width: 400px;
+    overflow: hidden;
+    background-color: #004AF2;
+    border-radius: 5px;
+
+}
+
+.request-form__header {
+    padding: 20px 30px;
+    background-color: #033FC9;
+}
+
+.request-form__title {
+    font-family: 'Lato', sans-serif;
+    font-size: 30px;
+    font-weight: 900;
+    color: #fff;
+
+
+}
+
+.request-form__text {
+    font-size: 15px;
+    color: #fff;
+    line-height: 1.4;
+}
+
+.request-form__content {
+    padding: 30px;
+}
+
+
+
+
+
+
+
+/* Form */
+.form__group {
+    margin-bottom: 25px;
+
+}
+
+.input {
+    display: block;
+    width: 100%;
+    background: none;
+    padding-bottom: 12px;
+    padding-left: 40px;
+
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.25);
+    font-family: 'PT Sans', sans-serif;
+    font-size: 16px;
+    /*чтобы не было зума на телефонах*/
+    color: #fff;
+
+    transition: border-color 0.1s linear;
+
+}
+
+.input::placeholder {
+    color: #fff;
+}
+
+.input:focus {
+    outline: none;
+    border-bottom-color: #fff;
+
+}
+
+.input--user {
+    background: url("/images/user-icon.svg") left 15px top 5px no-repeat;
+
 }
