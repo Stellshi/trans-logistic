@@ -1,14 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|PT+Sans&display=swap&subset=cyrillic"
-        rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,900|PT+Sans&display=swap&subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
     <title>CenterLogistic</title>
 </head>
-
 <body>
 
 
@@ -16,7 +13,7 @@
     <header class="header">
         <div class="container">
             <div class="header__inner">
-                <img src="images/logo.svg" alt="CenterLogistic">
+                <img src="assets/images/logo.svg" alt="CenterLogistic">
 
                 <nav class="nav">
                     <a class="nav__link  active" href="#">Services</a>
@@ -36,47 +33,90 @@
         <div class="container">
             <div class="intro__inner">
 
-
-
-                <div class="request-form">
+                <div class="request-form  request-form--intro">
                     <div class="request-form__header">
                         <h3 class="request-form__title">Get Callback</h3>
-                        <div class="request-form__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
-                            diam nonumy eirmod tempor invidunt ut</div>
+                        <div class="request-form__text">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</div>
                     </div>
+
                     <div class="request-form__content">
                         <form class="form" action="/" method="post">
                             <div class="form__group">
-                                <!-- <img src="/images/user-icon.svg" alt=""> -->
-                                <input class="input input--user"  type="text" placeholder="Your name">
+                                <input class="input  input--user" type="text" placeholder="Your name">
                             </div>
                             <div class="form__group">
-                                <!-- <img src="/images/phone-icon.svg" alt=""> -->
-                                <input class="input input--tel" type="tel" placeholder="Your phone">
+                                <input class="input  input--phone" type="tel" placeholder="Your phone">
                             </div>
                             <div class="form__group">
-                                <!-- <img src="/images/mail-icon.svg" alt=""> -->
-                                <input class="input input--email" type="email" placeholder="Your e-mail">
+                                <input class="input  input--email" type="email" placeholder="Your email">
                             </div>
-
+                            <button class="btn  btn--block  btn--orange" type="submit">Call me back</button>
                         </form>
-
                     </div>
+                </div><!-- /.request-form -->
 
-
-                </div>
                 <div class="intro__text">
                     <div class="intro__countries">USA, Europe, Asia</div>
-                    <h1 class="intro__titile">
+                    <h1 class="intro__title">
                         <span class="intro__title-amp">&amp;</span>
                         Trans<br>Logistic
                     </h1>
                 </div>
-            </div>
-        </div>
-    </div>
+            </div><!-- /.intro__inner -->
 
+        </div><!-- /.container -->
+    </div><!-- /.intro -->
+
+
+
+    <!-- Services -->
+    <section class="section">
+        <div class="container">
+            <div class="services">
+                <h2 class="services__main-title">Services</h2>
+
+                <div class="services__item">
+                    <h4 class="services__title">Ground shipping</h4>
+                    <div class="services__text">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+                    </div>
+                    <div class="services__footer">
+                        <a class="services__link" href="#">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <h4 class="services__title">Railway shipping</h4>
+                    <div class="services__text">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                    </div>
+                    <div class="services__footer">
+                        <a class="services__link" href="#">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <h4 class="services__title">Water shipping</h4>
+                    <div class="services__text">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam</p>
+                    </div>
+                    <div class="services__footer">
+                        <a class="services__link" href="#">Learn more</a>
+                    </div>
+                </div>
+
+                <div class="services__item">
+                    <h4 class="services__title">Air shipping</h4>
+                    <div class="services__text">
+                        <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut</p>
+                    </div>
+                    <div class="services__footer">
+                        <a class="services__link" href="#">Learn more</a>
+                    </div>
+                </div>
+            </div><!-- /.services -->
+        </div><!-- /.container -->
+    </section>
 
 </body>
-
 </html>
