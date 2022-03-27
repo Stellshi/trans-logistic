@@ -5,7 +5,7 @@ body {
 
     font-family: 'PT Sans', sans-serif;
     font-size: 15px;
-    line-height: 1.5;
+    line-height: 1.4;
     color: #585858;
 }
 
@@ -19,12 +19,21 @@ h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
 
+p {
+    margin: 0 0 10px;
+}
+
 ul, ol {
     margin: 0;
     padding: 0;
     list-style: none;
 }
 
+.img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
 
 /* Container */
 .container {
@@ -248,22 +257,24 @@ ul, ol {
 
 /* Section */
 
-
 .section {
     padding: 60px 0;
-
 }
 
 .section--map {
-    background: url(/assets/images/map.svg) no-repeat left 30px top 130px ;
+    background: url("../images/map.svg") no-repeat left 30px top 130px;
+}
+
+.section--gray {
+    background-color: #F9F9F9;
 }
 
 .section__title {
     margin-bottom: 40px;
 
     font-family: 'Lato', sans-serif;
+    font-size: 45px;
     line-height: 1.2;
-    font-size: 35px;
     color: #2C2C2C;
     font-weight: 900;
 }
@@ -271,7 +282,6 @@ ul, ol {
 .section__title span {
     color: #0D53F2;
 }
-
 
 
 /* Services */
@@ -362,41 +372,245 @@ ul, ol {
 }
 
 
-/* our clients  */
 
+/* Clients */
 
-/*Clientns*/
 .clients {
     display: flex;
     margin-bottom: 60px;
 }
 
-.clients__logo {
+.clients__logos {
     width: 60%;
-
 }
 
-.clients__rewies {
+.clients__reviews {
     width: 40%;
 }
 
 .clients__list {
     display: flex;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
     align-items: center;
 }
 
 .clients__list li {
-    margin-right: 40px;
+    margin-right: 50px;
     margin-bottom: 40px;
 }
 
-.clients-love{
+.clients-love {
     display: inline-block;
-    color: #464646;
-    font-size: 18px;
-    padding-top: 5px;
     margin-left: 40px;
     min-height: 47px;
-    background: url(/assets/images/heart.svg) no-repeat left 20px top 0;
+    padding-top: 5px;
+
+    background: url("../images/heart.svg") no-repeat left 19px top;
+
+    font-size: 18px;
+    color: #464646;
+}
+
+
+
+/* Reviews */
+
+.reviews {
+    position: relative;
+}
+
+.reviews:before {
+    content: "";
+    display: block;
+    width: 92px;
+    height: 126px;
+
+    background: url("../images/lines.svg") no-repeat;
+
+    position: absolute;
+    top: -15px;
+    left: 2px;
+    z-index: 1;
+}
+
+.reviews__header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.reviews__header-content {
+    flex-grow: 1;
+    padding-left: 20px;
+    font-family: 'Lato', sans-serif;
+}
+
+.reviews__photo {
+    width: 100px;
+    height: 100px;
+
+    border-radius: 50%;
+    border: 5px solid #fff;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, .16);
+}
+
+.reviews__name {
+    font-size: 18px;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.reviews__company {
+    font-size: 15px;
+    color: #2C2C2C;
+}
+
+.reviews__content {
+    color: #585858;
+    font-size: 15px;
+    line-height: 1.8;
+}
+
+.reviews__content p {
+    margin-bottom: 20px;
+}
+
+.reviews__content p:first-line {
+    text-indent: 20px;
+}
+
+
+
+/* Benefits */
+.benefits {
+    display: flex;
+}
+
+.benefits__col {
+    width: 50%;
+}
+
+.benefits-list {
+    width: 100%;
+    max-width: 370px;
+    padding-left: 50px;
+    position: relative;
+
+    background-image: linear-gradient(to bottom, #fff 40%, #A5A5A5 40%);
+    background-size: 2px 35px;
+    background-repeat: repeat-y;
+    background-position: left 12px top -4px;
+}
+
+.benefits-list:before,
+.benefits-list:after {
+    content: "";
+    display: block;
+    width: 26px;
+    height: 36px;
+
+    background-color: #fff;
+    background-repeat: no-repeat;
+
+    position: absolute;
+    left: 0;
+    z-index: 1;
+}
+
+.benefits-list:before {
+    background-image: url("../images/pin-start.svg");
+
+    top: -5px;
+}
+
+.benefits-list:after {
+    background-image: url("../images/pin-end.svg");
+
+    bottom: -4px;
+}
+
+.benefits-list__item:not(:last-child) {
+    margin-bottom: 35px;
+}
+
+.benefits-list__title {
+    margin-bottom: 12px;
+
+    font-family: 'Lato', sans-serif;
+    font-size: 21px;
+    line-height: 1.2;
+    color: #2C2C2C;
+    font-weight: 900;
+}
+
+.benefits-list__text {
+    font-size: 15px;
+    color: #585858;
+}
+
+
+
+
+/* Team */
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.team__col {
+    width: 33.33333%;
+    padding: 0 15px;
+    margin-bottom: 30px;
+}
+
+.team__photo {
+    margin-bottom: 13px;
+
+    box-shadow: 10px 5px 13px rgba(0, 0, 0, .16);
+}
+
+.team__name {
+    margin-bottom: 5px;
+
+    font-family: 'Lato', sans-serif;
+    color: #2C2C2C;
+    font-size: 18px;
+    line-height: 1.2;
+    font-weight: 900;
+}
+
+.team__prof {
+    margin-bottom: 11px;
+
+    font-size: 15px;
+    color: #585858;
+}
+
+.team__contacts {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #585858;
+}
+
+.team__contacts li {
+    margin-bottom: 9px;
+}
+
+.team__contacts a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.team__contacts a:hover {
+    text-decoration: underline;
+}
+
+.team__contacts-icon {
+    width: 16px;
+    height: auto;
+    margin-right: 7px;
 }
